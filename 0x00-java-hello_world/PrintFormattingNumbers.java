@@ -7,6 +7,6 @@ public class PrintFormattingNumbers {
         System.out.printf("Value: $%,.2f%n", value);
 
         // Format tax as percentage (rounded)
-        System.out.printf("Tax: %.2f%%%n", tax * 100);
+        System.out.printf("Tax: %.2f%%%n", tax);
     }
 }
