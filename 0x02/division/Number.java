@@ -4,7 +4,7 @@ public class Number {
         try {
             qismet = a / b;
         } catch (Exception e) {
-            System.out.println("It's not possible to divide by zero");
+            System.out.println("It's not possible to divide by zero.");
         } finally {
             System.out.println(a + " / " + b + " = " + qismet);
         }
