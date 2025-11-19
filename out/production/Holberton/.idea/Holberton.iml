@@ -12,6 +12,7 @@
       <sourceFolder url="file://$MODULE_DIR$/0x01/uppercase" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x02" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x02/division" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0x02/square" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
