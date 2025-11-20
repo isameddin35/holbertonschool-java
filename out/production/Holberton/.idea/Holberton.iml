@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/0x02/square" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x03" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x03/salary" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/0x03/basic_account" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/0x03/bookstore" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
