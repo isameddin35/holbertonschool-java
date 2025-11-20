@@ -1,4 +1,15 @@
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+
 public class Program {
+    private static final DecimalFormat df;
+
+    static {
+        DecimalFormatSymbols symbols = new DecimalFormatSymbols();
+        symbols.setDecimalSeparator(',');
+        df = new DecimalFormat("#0.00", symbols);
+    }
+
     public static void main(String[] args) {
         Department engineeringDepartment = new Department(1000, 1100);
         Department documentationDepartment = new Department(1000, 800);
@@ -11,34 +22,20 @@ public class Program {
         Employee documentationEmployee2 = new Employee(3000);
         Manager documentationManager = new Manager(4980);
 
-        System.out.printf("Fixed Salary: %.2f - Total Salary: %.2f - Bonus Amount: %.2f\n",
-                engineeringEmployee1.getFixedSalary(),
-                engineeringEmployee1.calculateTotalSalary(engineeringDepartment),
-                engineeringEmployee1.calculateBonus(engineeringDepartment));
+        print(engineeringEmployee1, engineeringDepartment);
+        print(engineeringEmployee2, engineeringDepartment);
+        print(engineeringManager, engineeringDepartment);
 
-        System.out.printf("Fixed Salary: %.2f - Total Salary: %.2f - Bonus Amount: %.2f\n",
-                engineeringEmployee2.getFixedSalary(),
-                engineeringEmployee2.calculateTotalSalary(engineeringDepartment),
-                engineeringEmployee2.calculateBonus(engineeringDepartment));
+        print(documentationEmployee1, documentationDepartment);
+        print(documentationEmployee2, documentationDepartment);
+        print(documentationManager, documentationDepartment);
+    }
 
-        System.out.printf("Fixed Salary: %.2f - Total Salary: %.2f - Bonus Amount: %.2f\n",
-                engineeringManager.getFixedSalary(),
-                engineeringManager.calculateTotalSalary(engineeringDepartment),
-                engineeringManager.calculateBonus(engineeringDepartment));
-
-        System.out.printf("Fixed Salary: %.2f - Total Salary: %.2f - Bonus Amount: %.2f\n",
-                documentationEmployee1.getFixedSalary(),
-                documentationEmployee1.calculateTotalSalary(documentationDepartment),
-                documentationEmployee1.calculateBonus(documentationDepartment));
-
-        System.out.printf("Fixed Salary: %.2f - Total Salary: %.2f - Bonus Amount: %.2f\n",
-                documentationEmployee2.getFixedSalary(),
-                documentationEmployee2.calculateTotalSalary(documentationDepartment),
-                documentationEmployee2.calculateBonus(documentationDepartment));
-
-        System.out.printf("Fixed Salary: %.2f - Total Salary: %.2f - Bonus Amount: %.2f\n",
-                documentationManager.getFixedSalary(),
-                documentationManager.calculateTotalSalary(documentationDepartment),
-                documentationManager.calculateBonus(documentationDepartment));
+    private static void print(Employee e, Department d) {
+        System.out.println(
+                "Fixed Salary: " + df.format(e.getFixedSalary()) +
+                        " - Total Salary: " + df.format(e.calculateTotalSalary(d)) +
+                        " - Bonus Amount: " + df.format(e.calculateBonus(d))
+        );
     }
 }
