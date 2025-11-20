@@ -4,7 +4,6 @@ public class Manager extends Employee {
         super(fixedSalary);
     }
 
-    @Override
     public double calculateBonus(Department department) {
         double bonus = 0;
         if (department.reachedTarget()) {
