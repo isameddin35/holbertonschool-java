@@ -1,3 +1,6 @@
+import exceptions.InvalidAuthorException;
+import exceptions.InvalidBookException;
+
 public class Book {
     private String title;
     private String author;

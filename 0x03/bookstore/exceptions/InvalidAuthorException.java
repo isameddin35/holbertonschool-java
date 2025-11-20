@@ -1,6 +1,8 @@
+package exceptions;
+
 public class InvalidAuthorException extends Exception {
 
-    InvalidAuthorException(String message) {
+    public InvalidAuthorException(String message) {
         super(message);
     }
 }

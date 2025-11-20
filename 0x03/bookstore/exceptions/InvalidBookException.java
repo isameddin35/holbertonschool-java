@@ -1,6 +1,8 @@
+package exceptions;
+
 public class InvalidBookException extends Exception {
 
-    InvalidBookException(String message) {
+    public InvalidBookException(String message) {
         super(message);
     }
 }
