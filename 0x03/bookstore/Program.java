@@ -41,36 +41,34 @@ public class Program {
             System.out.println(ex.getMessage() + "\n");
         }
 
-//        try {
-//            GoldEditionBook goldEditionBook2 = new GoldEditionBook(
-//                    "Alice’s Adventures in Wonderland",
-//                    "Lewis Carroll",
-//                    21.88);
-//
-//            System.out.println("Title: " + goldEditionBook2.getTitle()
-//                    + " - Author: " + goldEditionBook2.getAuthor()
-//                    + " - Price: " + df.format(goldEditionBook2.getPrice()));
-//
-//        } catch (Exception ex) {
-//            System.out.println(ex.getMessage() + "\n");
-//        }
+        try {
+            GoldEditionBook goldEditionBook2 = new GoldEditionBook(
+                    "Alice’s Adventures in Wonderland",
+                    "Lewis Carroll",
+                    21.88);
 
-        System.out.println("Invalid author name");
+            System.out.println("Title: " + goldEditionBook2.getTitle()
+                    + " - Author: " + goldEditionBook2.getAuthor()
+                    + " - Price: " + df.format(goldEditionBook2.getPrice()));
 
-//        try {
-//            Book book2 = new Book(
-//                    "Dracula",
-//                    "Bram Stoker",
-//                    15.99);
-//
-//            System.out.println("Title: " + book2.getTitle()
-//                    + " - Author: " + book2.getAuthor()
-//                    + " - Price: " + df.format(book2.getPrice()));
-//
-//        } catch (Exception ex) {
-//            System.out.println(ex.getMessage() + "\n");
-//        }
-        System.out.println("Invalid book title");
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage() + "\n");
+        }
+
+
+        try {
+            Book book2 = new Book(
+                    "Dracula",
+                    "Bram Stoker",
+                    15.99);
+
+            System.out.println("Title: " + book2.getTitle()
+                    + " - Author: " + book2.getAuthor()
+                    + " - Price: " + df.format(book2.getPrice()));
+
+        } catch (Exception ex) {
+            System.out.println(ex.getMessage() + "\n");
+        }
 
         try {
             Book book3 = new Book(

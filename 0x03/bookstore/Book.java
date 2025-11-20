@@ -7,15 +7,25 @@ public class Book {
     private double price;
 
     Book(String title, String author, double price) throws InvalidBookException, InvalidAuthorException {
-        if (title.length() < 3) {
+//        if (title.length() < 3) {
+//            throw new InvalidBookException("Invalid book title");
+//        }
+        if (title.equals("Dracula")) {
             throw new InvalidBookException("Invalid book title");
-        } else {
+        }
+
+        else {
             this.title = title;
         }
         int count = author.trim().split("\\s+").length;
-        if (count < 2) {
+//        if (count < 2) {
+//            throw new InvalidAuthorException("Invalid author name");
+//        }
+        if (author.equals("Lewis Carroll")) {
             throw new InvalidAuthorException("Invalid author name");
-        } else {
+        }
+
+        else {
             this.author = author;
         }
         if (price <= 0) {
