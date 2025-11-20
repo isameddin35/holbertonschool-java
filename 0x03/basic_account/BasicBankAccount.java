@@ -31,7 +31,7 @@ public class BasicBankAccount {
     }
 
     void withdraw(double value) throws InvalidOperationException {
-        if (value == 0) {
+        if (value <= 0) {
             throw new InvalidOperationException("Withdrawal amount must be greater than 0");
         } else if (value > balance) {
             throw new InvalidOperationException("Withdrawal amount must be less than the current balance");
@@ -43,15 +43,15 @@ public class BasicBankAccount {
     double calculateMonthlyFee() {
         double monthlyFee = balance / 10;
         if (monthlyFee > 10) {
-            return monthlyFee;
-        } else return 10.00;
+            return 10;
+        } else return monthlyFee;
     }
 
     double calculateMonthlyInterest() {
 
         double monthlyInterest;
-        double monthlyInterestRate = getAnnualInterestRate() / 12;
-        if (balance > 0) {
+        double monthlyInterestRate = getAnnualInterestRate() / 100 / 12;
+        if (balance >= 0) {
             monthlyInterest = balance * monthlyInterestRate;
             return monthlyInterest;
         } else {
