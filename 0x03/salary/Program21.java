@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 
-public class Program {
+public class Program21 {
     private static final DecimalFormat df;
 
     static {
