@@ -1,6 +1,6 @@
 public class GoldEditionBook extends Book{
 
-    GoldEditionBook(String title, String author, double price) {
+    GoldEditionBook(String title, String author, double price) throws InvalidBookException, InvalidAuthorException {
         super(title, author, price);
     }
 
