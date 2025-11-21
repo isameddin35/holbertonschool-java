@@ -8,10 +8,10 @@ public class CharacterGame{
         } else currentHealth -= damageAmount;
     }
 
-    public void receiveHealing(int heailngAmount) {
-        if ((currentHealth + heailngAmount) > 100) {
+    public void receiveHealing(int healingAmount) {
+        if ((currentHealth + healingAmount) > 100) {
             currentHealth = 100;
-        } else currentHealth += heailngAmount;
+        } else currentHealth += healingAmount;
     }
 
 
