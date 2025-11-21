@@ -1,7 +1,7 @@
-public class Program {
+public class Program55 {
     public static void main(String[] args) {
-        CharacterGame character1 = new CharacterGame();
-        CharacterGame character2 = new CharacterGame();
+        CharacterGame2 character1 = new CharacterGame2();
+        CharacterGame2 character2 = new CharacterGame2();
 
         character1.name = "Sonic";
         character1.currentHealth = 10;
