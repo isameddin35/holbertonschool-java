@@ -5,7 +5,7 @@ public class CharacterGame {
 
     public void takeDamage(int damageAmount) {
         if ((currentHealth - damageAmount) < 0) {
-            currentHealth = 0;
+            setCurrentHealth(0);
         } else setCurrentHealth(getCurrentHealth() - damageAmount);
     }
 
