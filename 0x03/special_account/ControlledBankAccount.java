@@ -9,6 +9,7 @@ public class ControlledBankAccount extends BasicBankAccount {
 
     }
 
+    @Override
     void applyMonthlyUpdate() {
         double newBalance = getBalance() - calculateMonthlyFee() + calculateMonthlyInterest();
         if (newBalance < minimumBalance) {
