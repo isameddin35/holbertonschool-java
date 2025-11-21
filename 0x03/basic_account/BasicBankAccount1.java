@@ -1,12 +1,12 @@
-import exceptions.InvalidOperationException;
+import exceptions.InvalidOperationException1;
 
-public class BasicBankAccount {
+public class BasicBankAccount1 {
 
     private String accountNumber;
     private double balance = 0;
     private double annualInterestRate;
 
-    BasicBankAccount(String accountNumber, double annualInterestRate) {
+    BasicBankAccount1(String accountNumber, double annualInterestRate) {
         this.accountNumber = accountNumber;
         this.annualInterestRate = annualInterestRate;
     }
@@ -23,18 +23,18 @@ public class BasicBankAccount {
         return annualInterestRate;
     }
 
-    void deposit(double value) throws InvalidOperationException {
+    void deposit(double value) throws InvalidOperationException1 {
         if (value <= 0) {
-            throw new InvalidOperationException("Deposit amount must be greater than 0");
+            throw new InvalidOperationException1("Deposit amount must be greater than 0");
         }
         balance += value;
     }
 
-    void withdraw(double value) throws InvalidOperationException {
+    void withdraw(double value) throws InvalidOperationException1 {
         if (value <= 0) {
-            throw new InvalidOperationException("Withdrawal amount must be greater than 0");
+            throw new InvalidOperationException1("Withdrawal amount must be greater than 0");
         } else if (value > balance) {
-            throw new InvalidOperationException("Withdrawal amount must be less than the current balance");
+            throw new InvalidOperationException1("Withdrawal amount must be less than the current balance");
         } else {
             balance -= value;
         }
