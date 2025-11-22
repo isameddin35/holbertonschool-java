@@ -1,4 +1,4 @@
-public class PrintStringConcat {
+public class PrintStringConcatt {
     public static void main(String[] args) {
         String text1 = "Holberton ";
         String text2 = "School";
