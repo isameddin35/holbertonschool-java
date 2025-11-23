@@ -1,9 +1,9 @@
-public class CharacterGame {
+public class CharacterGame321 {
     private String name;
     private int currentHealth;
     private String status;
 
-    CharacterGame(int currentHealth, String name) {
+    CharacterGame321(int currentHealth, String name) {
         setCurrentHealth(currentHealth);
         this.name = name;
     }
