@@ -1,4 +1,4 @@
-public class Program {
+public class Program54 {
     public static void main(String[] args) {
         CharacterGame321 character1 = new CharacterGame321(50, "Sonic");
 
