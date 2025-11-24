@@ -1,6 +1,18 @@
-public class Rectangle extends GeometricShape{
+public class Rectangle extends GeometricShape {
     private double width;
     private double height;
+
+    @Override
+    public double area() {
+        return getWidth() * getHeight();
+    }
+
+    @Override
+    public String toString() {
+        return "[Rectangle] " +
+                width +
+                " / " + height;
+    }
 
     public double getWidth() {
         return width;
