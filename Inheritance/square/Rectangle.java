@@ -1,4 +1,4 @@
-public class Rectangle extends GeometricShape432 {
+public class Rectangle extends GeometricShape {
     protected double width;
     protected double height;
 
