@@ -1,4 +1,4 @@
-public class Square {
+public class Square2 {
     public static double area(double side) {
         double area = 0;
         if (side < 0) {

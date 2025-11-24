@@ -1,6 +1,6 @@
-public class Program {
+public class Program234 {
     public static void main(String[] args) {
-        Rectangle rectangle = new Rectangle();
+        Rectangle234 rectangle = new Rectangle234();
         rectangle.setWidth(7);
         rectangle.setHeight(4);
 

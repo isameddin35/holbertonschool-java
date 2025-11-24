@@ -2,7 +2,7 @@ public class Program4584 {
     public static void main(String[] args) {
         try {
             double side1 = -5;
-            double result = Square.area(side1);
+            double result = Square2.area(side1);
             System.out.println(result);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -10,7 +10,7 @@ public class Program4584 {
 
         try {
             double side2 = 3;
-            double result = Square.area(side2);
+            double result = Square2.area(side2);
             System.out.println(result);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
