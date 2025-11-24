@@ -10,8 +10,8 @@ public class Rectangle extends GeometricShape {
     @Override
     public String toString() {
         return "[Rectangle] " +
-                width +
-                " / " + height;
+                width+ "0" +
+                " / " + height + "0";
     }
 
     public double getWidth() {
