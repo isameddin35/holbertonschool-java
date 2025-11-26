@@ -1,8 +1,8 @@
-public class Order {
+public class Order2 {
     private final double discountPercentage;
-    private ItemOrder[] items;
+    private ItemOrder2[] items;
 
-    public Order(double discountPercentage, ItemOrder[] items) {
+    public Order2(double discountPercentage, ItemOrder2[] items) {
         this.discountPercentage = discountPercentage;
         this.items = items;
     }
@@ -10,7 +10,7 @@ public class Order {
     public double calculateTotal() {
         double sumWODiscount = 0;
         double sum = 0;
-        for (ItemOrder item : items) {
+        for (ItemOrder2 item : items) {
             sumWODiscount += item.getProduct().getNetPrice() * item.getQuantity();
             sum = sumWODiscount - (sumWODiscount * discountPercentage / 100);
         }
