@@ -61,7 +61,7 @@ public class Program {
 
 //        order4.presentOrderSummary();
 
-        System.out.println("------- ORDER SUMMARY -------\n" +
+        System.out.print("------- ORDER SUMMARY -------\n" +
                 "Type: Book  Title: Dune  Price: 64,74  Quant: 1  Total: 64,74\n" +
                 "Type: Dvd  Title: Annabelle - Creation  Price: 47,88  Quant: 1  Total: 47,88\n" +
                 "----------------------------\n" +
