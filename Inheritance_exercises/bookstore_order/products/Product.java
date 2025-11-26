@@ -1,13 +1,13 @@
 package products;
 
-public abstract class Products {
+public abstract class Product {
     private String title;
     private int year;
     private String country;
     private double grossPrice;
 
 
-    Products(String title, int year, String country, double grossPrice) {
+    public Product(String title, int year, String country, double grossPrice) {
         this.title = title;
         this.year = year;
         this.country = country;
