@@ -1,7 +1,7 @@
 import exceptions.InvalidAuthorException;
 import exceptions.InvalidBookException;
 
-public class GoldEditionBook extends Book{
+public class GoldEditionBook extends Book2 {
 
     GoldEditionBook(String title, String author, double price) throws InvalidBookException, InvalidAuthorException {
         super(title, author, price);

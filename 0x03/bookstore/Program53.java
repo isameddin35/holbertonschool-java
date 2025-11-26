@@ -14,7 +14,7 @@ public class Program53 {
     public static void main(String[] args) {
 
         try {
-            Book book1 = new Book(
+            Book2 book1 = new Book2(
                     "Robinson Crusoe",
                     "Daniel Defoe",
                     56);
@@ -57,7 +57,7 @@ public class Program53 {
 
 
         try {
-            Book book2 = new Book(
+            Book2 book2 = new Book2(
                     "Dracula",
                     "Bram Stoker",
                     15.99);
@@ -71,7 +71,7 @@ public class Program53 {
         }
 
         try {
-            Book book3 = new Book(
+            Book2 book3 = new Book2(
                     "The Great Gatsby",
                     "F. Scott Fitzgerald",
                     0);

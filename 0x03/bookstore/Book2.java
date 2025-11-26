@@ -1,12 +1,12 @@
 import exceptions.InvalidAuthorException;
 import exceptions.InvalidBookException;
 
-public class Book {
+public class Book2 {
     private String title;
     private String author;
     private double price;
 
-    Book(String title, String author, double price) throws InvalidBookException, InvalidAuthorException {
+    Book2(String title, String author, double price) throws InvalidBookException, InvalidAuthorException {
 //        if (title.length() < 3) {
 //            throw new InvalidBookException("Invalid book title");
 //        }
