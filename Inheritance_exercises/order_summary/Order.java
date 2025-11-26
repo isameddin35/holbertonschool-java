@@ -21,7 +21,7 @@ public class Order {
         System.out.println("------- ORDER SUMMARY -------");
         for (ItemOrder item : items) {
             System.out.printf("Type: %s  Title: %s  Price: %.2f  Quant: %d  Total: %.2f%n",
-                    item.getClass(),
+                    item.getProduct().getClass().getSimpleName(),
                     item.getProduct().getTitle(),
                     item.getProduct().getNetPrice(),
                     item.getQuantity(),
