@@ -11,4 +11,9 @@ public class UnitedParcelService implements ShippingProvider{
         else shipping.setValue(value * 4.5 / 100);
         return shipping;
     }
+
+    @Override
+    public ShippingProviderType getShippingProviderType() {
+        return null;
+    }
 }

@@ -11,4 +11,9 @@ public class DalseyHillblomLynn implements ShippingProvider{
         else shipping.setValue(value * 4 / 100);
         return shipping;
     }
+
+    @Override
+    public ShippingProviderType getShippingProviderType() {
+        return null;
+    }
 }
