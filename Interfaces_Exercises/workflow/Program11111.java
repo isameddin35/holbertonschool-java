@@ -3,7 +3,7 @@ import activity.ModifyVideoStatus;
 import activity.SendEmail;
 import activity.UploadVideo;
 
-public class Program {
+public class Program11111 {
     public static void main(String[] args) {
         WorkflowMachine workflowMachine = new WorkflowMachine();
 

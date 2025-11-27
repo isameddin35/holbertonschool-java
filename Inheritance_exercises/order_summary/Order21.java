@@ -1,8 +1,8 @@
-public class Order {
+public class Order21 {
     private final double discountPercentage;
     private ItemOrder[] items;
 
-    public Order(double discountPercentage, ItemOrder[] items) {
+    public Order21(double discountPercentage, ItemOrder[] items) {
         this.discountPercentage = discountPercentage;
         this.items = items;
     }
