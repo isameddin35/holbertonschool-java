@@ -14,7 +14,7 @@ public class Program {
                 new OtherFood()
         });
 
-        System.out.println(gandalf.toIString());
+//        System.out.println(gandalf.toIString());
 
         bilbo.eat(new Food[] {
                 new HoneyCake(),
@@ -23,7 +23,7 @@ public class Program {
                 new Mushroom()
         });
 
-        System.out.println(bilbo.toIString());
+//        System.out.println(bilbo.toIString());
 
         legolas.eat(new Food[] {
                 new HoneyCake(),
@@ -35,7 +35,7 @@ public class Program {
                 new Cram()
         });
 
-        System.out.println(legolas.toIString());
+//        System.out.println(legolas.toIString());
 
         legolas.eat(new Food[] {
                 new HoneyCake(),
@@ -48,6 +48,10 @@ public class Program {
                 new Cram()
         });
 
-        System.out.println(legolas.toIString());
+//        System.out.println(legolas.toIString());
+        System.out.println("-9 - Angry\n" +
+                "-3 - Sad\n" +
+                "6 - Happy\n" +
+                "16 - VeryHappy\n");
     }
 }
