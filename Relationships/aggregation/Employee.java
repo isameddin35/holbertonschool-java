@@ -11,7 +11,7 @@ public class Employee {
 
     public void introduce() {
         System.out.printf(
-                "Code: %s%nName: %s%nDistrict: %s%nCity: %s%nCountry: %s%n",
+                "Code: %s%nName: %s%nDistrict: %s%nCity: %s%nCountry: %s",
                 code, name, address.getDistrict(), address.getCity(), address.getCountry()
         );
 
