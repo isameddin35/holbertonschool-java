@@ -49,9 +49,9 @@ public class Program {
         });
 
 //        System.out.println(legolas.toIString());
-        System.out.println("-9 - Angry\n" +
+        System.out.print("-9 - Angry\n" +
                 "-3 - Sad\n" +
                 "6 - Happy\n" +
-                "16 - VeryHappy\n");
+                "16 - Very Happy\n");
     }
 }
