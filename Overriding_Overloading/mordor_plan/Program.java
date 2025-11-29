@@ -14,7 +14,7 @@ public class Program {
                 new OtherFood()
         });
 
-        System.out.println(gandalf.toString());
+        System.out.println(gandalf.toIString());
 
         bilbo.eat(new Food[] {
                 new HoneyCake(),
@@ -23,7 +23,7 @@ public class Program {
                 new Mushroom()
         });
 
-        System.out.println(bilbo.toString());
+        System.out.println(bilbo.toIString());
 
         legolas.eat(new Food[] {
                 new HoneyCake(),
@@ -35,7 +35,7 @@ public class Program {
                 new Cram()
         });
 
-        System.out.println(legolas.toString());
+        System.out.println(legolas.toIString());
 
         legolas.eat(new Food[] {
                 new HoneyCake(),
@@ -48,7 +48,6 @@ public class Program {
                 new Cram()
         });
 
-        System.out.println(legolas.toString());
-        System.out.println();
+        System.out.println(legolas.toIString());
     }
 }

@@ -23,8 +23,7 @@ public class Character {
         }
     }
 
-    @Override
-    public String toString() {
+    public String toIString() {
         Mood mood = getCurrentMood();
         return happinessPoints + " - " + mood.getClass().getSimpleName();
     }
