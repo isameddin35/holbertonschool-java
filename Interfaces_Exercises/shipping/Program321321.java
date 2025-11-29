@@ -4,7 +4,7 @@ import providers.UnitedParcelService;
 
 import java.util.Locale;
 
-public class Program {
+public class Program321321 {
     public static void main(String[] args) {
         Locale.setDefault(Locale.GERMANY);
         Order order1 = new Order(1, 1500, 234.90);

@@ -14,12 +14,12 @@ public class Program21 {
         Department engineeringDepartment = new Department(1000, 1100);
         Department documentationDepartment = new Department(1000, 800);
 
-        Employee engineeringEmployee1 = new Employee(2300);
-        Employee engineeringEmployee2 = new Employee(3650);
+        Employee321 engineeringEmployee1 = new Employee321(2300);
+        Employee321 engineeringEmployee2 = new Employee321(3650);
         Manager engineeringManager = new Manager(5800);
 
-        Employee documentationEmployee1 = new Employee(2500);
-        Employee documentationEmployee2 = new Employee(3000);
+        Employee321 documentationEmployee1 = new Employee321(2500);
+        Employee321 documentationEmployee2 = new Employee321(3000);
         Manager documentationManager = new Manager(4980);
 
         print(engineeringEmployee1, engineeringDepartment);
@@ -31,7 +31,7 @@ public class Program21 {
         print(documentationManager, documentationDepartment);
     }
 
-    private static void print(Employee e, Department d) {
+    private static void print(Employee321 e, Department d) {
         System.out.println(
                 "Fixed Salary: " + df.format(e.getFixedSalary()) +
                         " - Total Salary: " + df.format(e.calculateTotalSalary(d)) +

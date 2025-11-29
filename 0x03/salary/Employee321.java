@@ -1,11 +1,11 @@
-public class Employee {
+public class Employee321 {
     private double fixedSalary;
 
     public double getFixedSalary() {
         return fixedSalary;
     }
 
-    Employee(double fixedSalary) {
+    Employee321(double fixedSalary) {
         this.fixedSalary = fixedSalary;
     }
 
