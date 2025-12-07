@@ -1,4 +1,4 @@
-public class Program {
+public class Program43242 {
     public static void main(String[] args) {
 //        Order order = new Order();
 //
