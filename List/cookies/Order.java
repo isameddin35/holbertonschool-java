@@ -7,7 +7,7 @@ public class Order {
     public Order() {
         cookies = new ArrayList<>();
     }
-    
+
     public void addCookieOrder(CookieOrder order) {
         cookies.add(order);
     }
