@@ -10,7 +10,7 @@ public class Task {
 
     public void modifyDescription(String newDescription) throws Exception {
         if (newDescription == null || newDescription.isEmpty()) {
-            throw new IllegalArgumentException("Invalid task description");
+            throw new Exception("Invalid task description");
         } else {
             this.description = newDescription;
         }
