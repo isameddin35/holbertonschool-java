@@ -5,12 +5,9 @@ public class Order {
     private ArrayList<CookieOrder> cookies;
 
     public Order() {
+        cookies = new ArrayList<>();
     }
-
-    public Order(ArrayList<CookieOrder> cookies) {
-        this.cookies = cookies;
-    }
-
+    
     public void addCookieOrder(CookieOrder order) {
         cookies.add(order);
     }
