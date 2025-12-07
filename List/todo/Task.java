@@ -8,13 +8,13 @@ public class Task {
         this.identifier = identifier;
     }
 
-    public void modifyDescription(String newDescription) throws Exception {
-        if (newDescription == null || newDescription.isEmpty()) {
+    public void modifyDescription(String newDescription) {
+        if (newDescription == null || newDescription.trim().isEmpty()) {
             throw new IllegalArgumentException("Invalid task description");
-        } else {
-            this.description = newDescription;
         }
+        this.description = newDescription;
     }
+
 
     public String getDescription() {
         return description;
