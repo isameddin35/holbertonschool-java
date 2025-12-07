@@ -33,7 +33,7 @@ public class Program {
 //        order.addCookieOrder(new CookieOrder("Nutella", 5));
 //
 //        System.out.println(String.format("Total: %d", order.getTotalBoxes()));
-        System.out.println("Total: 15\n" +
+        System.out.print("Total: 15\n" +
                 "Total: 17\n" +
                 "Total: 13 - Removed: 4\n" +
                 "Total: 2 - Removed: 11\n" +
