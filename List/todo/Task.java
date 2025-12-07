@@ -10,7 +10,7 @@ public class Task {
 
     public void modifyDescription(String newDescription) throws Exception {
         if (newDescription == null || newDescription.isEmpty()) {
-            throw new Exception("Invalid task description");
+            throw new IllegalArgumentException("Invalid task description");
         } else {
             this.description = newDescription;
         }
@@ -28,9 +28,6 @@ public class Task {
         return identifier;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
-    }
 
     public void setDone(boolean done) {
         isDone = done;
