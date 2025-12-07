@@ -1,12 +1,12 @@
 import providers.Shipping;
 
-public class Order {
+public class Order111 {
     private int code;
     private double weight;
     private double total;
     private Shipping shipping;
 
-    public Order(int code, double weight, double total) {
+    public Order111(int code, double weight, double total) {
         this.code = code;
         this.weight = weight;
         this.total = total;

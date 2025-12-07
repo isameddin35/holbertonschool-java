@@ -7,10 +7,10 @@ import java.util.Locale;
 public class Program321321 {
     public static void main(String[] args) {
         Locale.setDefault(Locale.GERMANY);
-        Order order1 = new Order(1, 1500, 234.90);
-        Order order2 = new Order(2, 600, 124.00);
-        Order order3 = new Order(3, 3000, 53.00);
-        Order order4 = new Order(4, 7000, 300.00);
+        Order111 order1 = new Order111(1, 1500, 234.90);
+        Order111 order2 = new Order111(2, 600, 124.00);
+        Order111 order3 = new Order111(3, 3000, 53.00);
+        Order111 order4 = new Order111(4, 7000, 300.00);
 
         OrderProcessor orderProcessorFedex = new OrderProcessor(new Fedex());
         orderProcessorFedex.process(order1);

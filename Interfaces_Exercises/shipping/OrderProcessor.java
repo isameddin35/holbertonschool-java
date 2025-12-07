@@ -7,7 +7,7 @@ public class OrderProcessor {
         this.shippingProvider = shippingProvider;
     }
 
-    public void process(Order order) {
+    public void process(Order111 order) {
         order.setShipping(shippingProvider.calculateShipping(order.getWeight(), order.getTotal()));
     }
 
