@@ -1,12 +1,13 @@
+import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
-    private List<CookieOrder> cookies;
+    private ArrayList<CookieOrder> cookies;
 
     public Order() {
     }
 
-    public Order(List<CookieOrder> cookies) {
+    public Order(ArrayList<CookieOrder> cookies) {
         this.cookies = cookies;
     }
 
